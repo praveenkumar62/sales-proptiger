@@ -48,7 +48,8 @@
             margin: 4px 0 0 -5px;
         }
         .custom-btn {
-            padding: 10px 25px;
+            width: 108px;
+            padding: 8px 20px;
             border-radius: 8px;
             background-color: rgb(243,	128, 32);
             color: #fff;
@@ -67,10 +68,68 @@
             left: -3px;
             z-index: -1;
         }
+        @media (max-width: 767px) {
+            body {
+                background: #fff;
+            }
+            .custom-panel {
+                background: transparent;
+            }
+            .container-mobile {
+                padding: 0;
+                margin: 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container-mobile hidden-sm hidden-md hidden-lg">
+        <div class="custom-panel">  
+            <div style="position:relative;">
+                <img src="./amit.png" style="width:145px;margin: -5px 0 0 -20px;" alt="Amit Kumar" />
+                <img src="./pt_logo.png" alt="Proptiger" style="width:60px;margin: 45px 15px 0 0;float:right;" />
+            </div>
+            <div class="clearfix"></div>
+
+            <h2 style="font-weight:800;margin-top:0;">Amit Kumar</h2>
+            <h3 class="font-normal;margin-top: 5px;">Manager - Sales</h3>
+
+            <div class="business-images" style="margin:20px 0 0px -5px;">
+                <div>
+                    <img src="./proptiger.png" alt="Proptiger" />
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <img src="./google-play.png" style="width:70px;" alt="Google play" />
+                <img src="./app-store.png" style="width:70px;" alt="App Store" />
+            </div>
+
+            <div class="social">
+                <p>
+                    <i class="fa fa-envelope-o"></i>
+                    <span style="display:inline-block;"><a href="mailto:amit.kumar@proptiger.com">amit.kumar@proptiger.com</a></span>
+                </p>
+                <p>
+                    <i class="fa fa-mobile"></i>
+                    <span style="display:inline-block;"><a href="tel:+919999999999">+91 9999999999</a></span>
+                </p>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    <span style="display:inline-block;">Echelon Square, Plot no. 25,<br />Sector 32, Gurugram - 122001</span>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="buttons" style="margin-top:15px">
+                <button class="btn custom-btn">Download</button>
+                <button class="btn custom-btn" style="float:right;">Share</button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <img src="./pt_bg.png" alt="image" class="bg-image hidden-lg hidden-md hidden-sm" />
+
+    <div class="container hidden-xs">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-2"></div>
             <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
