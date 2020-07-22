@@ -69,35 +69,35 @@
             z-index: -1;
         }
         @media (max-width: 767px) {
+            .profile-pic {
+                margin: -5px 0 0 -25px;
+                width:170px;
+            }
             .business-images img {
-                width: 170px;
+                width: 200px;
                 display: block;
-                height: 50px;
+                height: 65px;
                 object-fit: cover;
+            }
+            .stores img {
+                width: 100px !important;
             }
             .custom-panel {
                 padding: 20px 40px;
+                margin-top: 70px;
             }
             .container {
                 padding-right: 0px;
                 padding-left: 0px;
             }
-            .body {
-                overflow: hidden;
+            body {
+                background: #ccc;
+                align-items: initial;
             }
-            /* body {
-                background: #fff;
-                box-sizing: border-box;
-                overflow: hidden;
+            .social p {
+                margin: 20px 0;
             }
-            .custom-panel {
-                background: transparent;
-                padding: 5px 40px;
-            }
-            .container-mobile {
-                padding: 0;
-                margin: 0;
-            } */
+            
         }
     </style>
 </head>
@@ -167,7 +167,7 @@
                             <img src="./proptiger.png" alt="Proptiger" />
                         </div>
                     </div>
-                    <div style="margin-bottom: 20px;">
+                    <div style="margin-bottom: 35px;" class="stores">
                         <img src="./google-play.png" style="width:90px;" alt="Google play" />
                         <img src="./app-store.png" style="width:90px;" alt="App Store" />
                     </div>
