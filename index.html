@@ -56,7 +56,7 @@
             font-weight: bold;
         }
         .business-images img {
-            width: 150px;
+            width: 165px;
             display: block;
             height: 45px;
             object-fit: cover;
@@ -69,7 +69,23 @@
             z-index: -1;
         }
         @media (max-width: 767px) {
-            body {
+            .business-images img {
+                width: 170px;
+                display: block;
+                height: 50px;
+                object-fit: cover;
+            }
+            .custom-panel {
+                padding: 20px 40px;
+            }
+            .container {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+            .body {
+                overflow: hidden;
+            }
+            /* body {
                 background: #fff;
                 box-sizing: border-box;
                 overflow: hidden;
@@ -81,12 +97,12 @@
             .container-mobile {
                 padding: 0;
                 margin: 0;
-            }
+            } */
         }
     </style>
 </head>
 <body>
-    <div class="container-mobile hidden-sm hidden-md hidden-lg">
+    <!-- <div class="container-mobile hidden-sm hidden-md hidden-lg">
         <div class="custom-panel">  
             <div style="position:relative;">
                 <img src="./amit.png" style="width:145px;margin: -5px 0 0 -20px;" alt="Amit Kumar" />
@@ -129,12 +145,12 @@
             </div>
             <div class="clearfix"></div>
         </div>
-    </div>
-    <img src="./pt_bg.png" alt="image" class="bg-image hidden-lg hidden-md hidden-sm" />
+    </div> -->
+    <!-- <img src="./pt_bg.png" alt="image" class="bg-image hidden-lg hidden-md hidden-sm" /> -->
 
-    <div class="container hidden-xs">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-2"></div>
+            <div class="col-lg-3 col-md-3 col-sm-2 hidden-xs"></div>
             <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                 <div class="custom-panel">  
                     <div style="position:relative;">
@@ -152,8 +168,8 @@
                         </div>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <img src="./google-play.png" style="width:70px;" alt="Google play" />
-                        <img src="./app-store.png" style="width:70px;" alt="App Store" />
+                        <img src="./google-play.png" style="width:90px;" alt="Google play" />
+                        <img src="./app-store.png" style="width:90px;" alt="App Store" />
                     </div>
         
                     <div class="social">
@@ -181,7 +197,7 @@
                     <img src="./pt_bg.png" alt="image" class="bg-image" />
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-2"></div>
+            <div class="col-lg-3 col-md-3 col-sm-2 hidden-xs"></div>
         </div>
         
     </div>
